@@ -10,6 +10,36 @@ license: Proprietary. LICENSE.txt has complete terms
 
 A user may ask you to create, edit, or analyze the contents of a .pptx file. A .pptx file is essentially a ZIP archive containing XML files and other resources that you can read or edit. You have different tools and workflows available for different tasks.
 
+## Choosing a Creation Method
+
+**When the user asks to create a new presentation**, first ask them to choose a method:
+
+| Method | Best For | Output Format |
+|--------|----------|---------------|
+| **PowerPoint (Recommended)** | Business presentations, client deliverables, offline sharing | `.pptx` |
+| **Slidev** | Technical talks, code demos, developer presentations | Web / PDF / PPTX |
+
+### Decision Guide
+
+Choose **PowerPoint** when:
+- Sending to clients, stakeholders, or non-technical audience
+- Need native .pptx for editing in PowerPoint/Keynote/Google Slides
+- Offline distribution is required
+- Corporate/business context
+
+Choose **Slidev** when:
+- Content includes code snippets or technical demos
+- Presenting to developers or technical audience
+- Want version control (Git-friendly Markdown)
+- Need interactive animations or Vue components
+- Open source project presentations
+
+**Workflow References:**
+- PowerPoint: See sections below (html2pptx workflow, template workflow, OOXML editing)
+- Slidev: Read [`slidev.md`](slidev.md) for complete workflow
+
+---
+
 ## Reading and analyzing content
 
 ### Text extraction
